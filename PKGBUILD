@@ -32,10 +32,8 @@ depends=(
 )
 
 _dir="metapackages-${pkgver}/ros_base"
-source=("${pkgname}-${pkgver}.tar.gz"::"https://github.com/ros/metapackages/archive/${pkgver}.tar.gz"
-        "https://patch-diff.githubusercontent.com/raw/ros/metapackages/pull/31.patch")
-sha256sums=('5e055b7528d088cf62035d88c78cfd5aefcac2a96d0ce2ac62242f6d6f76d3b0'
-            'a8648852cff7b2740c5fe523b78309557b7f58e5c010e71a94c341b8cbfd5ba2')
+source=("${pkgname}-${pkgver}.tar.gz"::"https://github.com/ros/metapackages/archive/${pkgver}.tar.gz")
+sha256sums=('5e055b7528d088cf62035d88c78cfd5aefcac2a96d0ce2ac62242f6d6f76d3b0')
 
 build() {
 	# Use ROS environment variables.

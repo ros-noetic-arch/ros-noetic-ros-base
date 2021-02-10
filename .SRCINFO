@@ -14,9 +14,7 @@ pkgbase = ros-noetic-ros-base
 	depends = ros-noetic-ros-core
 	depends = ros-noetic-actionlib
 	source = ros-noetic-ros-base-1.5.0.tar.gz::https://github.com/ros/metapackages/archive/1.5.0.tar.gz
-	source = https://patch-diff.githubusercontent.com/raw/ros/metapackages/pull/31.patch
 	sha256sums = 5e055b7528d088cf62035d88c78cfd5aefcac2a96d0ce2ac62242f6d6f76d3b0
-	sha256sums = a8648852cff7b2740c5fe523b78309557b7f58e5c010e71a94c341b8cbfd5ba2
 
 pkgname = ros-noetic-ros-base
 
