@@ -37,11 +37,6 @@ source=("${pkgname}-${pkgver}.tar.gz"::"https://github.com/ros/metapackages/arch
 sha256sums=('5e055b7528d088cf62035d88c78cfd5aefcac2a96d0ce2ac62242f6d6f76d3b0'
             'a8648852cff7b2740c5fe523b78309557b7f58e5c010e71a94c341b8cbfd5ba2')
 
-prepare() {
-    cd ${srcdir}/${_dir}/..
-    patch -p1 < ${srcdir}/31.patch
-}
-
 build() {
 	# Use ROS environment variables.
 	source /usr/share/ros-build-tools/clear-ros-env.sh
